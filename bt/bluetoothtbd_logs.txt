@@ -1,0 +1,253 @@
+sudo LD_LIBRARY_PATH=./ ./bluetoothtbd -create-ipc-socket=fluoride -enable-on-start=true -v=3 >> bluetothtbd_logs.txt
+[1212/170957.176328:INFO:daemon.cc(138)] after setting init
+[1212/170957.178634:INFO:hal_util.cc(56)] hal_util_load_bt_library loaded HAL path=libbluetooth.so btinterface=0x7ff4a92e0cf8 handle=0x21cffd0
+bt_btif: init
+[1212/170957.178840:INFO:message_loop_thread.cc(175)] Run: message loop starting for thread bt_stack_manager_thread
+bt_stack_manager: event_init_stack is initializing the stack
+bt_osi_thread: run_thread: thread id 9006, thread name alarm_default_ca started
+bt_osi_thread: run_thread: thread id 9007, thread name alarm_dispatcher started
+bt_btif_core: btif_init_bluetooth entered
+bt_stack_config: init attempt to load stack conf from /home/zizo/fluoride/bt/conf/bt_stack.conf
+[1212/170957.179379:INFO:message_loop_thread.cc(175)] Run: message loop starting for thread bt_jni_thread
+bt_btif_core: btif_init_bluetooth finished
+bt_stack_manager: event_init_stack finished
+bt_osi_wakelock: wakelock_set_os_callouts set to non-native
+bt_btif: get_profile_interface: id = gatt
+[1212/170957.179524:VERBOSE1:bluetooth_interface.cc(162)] ThreadEventCallbackASSOCIATE_JVM
+bt_btif: get_profile_interface: id = a2dp
+bt_btif: get_profile_interface: id = a2dp_sink
+btif_av: bt_status_t BtifAvSink::Init(btav_sink_callbacks_t *)
+a2dp_codec: init
+a2dp_codec: createCodec: codec SBC
+a2dp_codec: createCodec: codec AAC
+a2dp_codec: createCodec: codec aptX
+a2dp_vendor_aptx_encoder: A2DP_VendorLoadEncoderAptx: cannot open aptX encoder library libaptX_encoder.so: libaptX_encoder.so: cannot open shared object file: No such file or directory
+a2dp_vendor_aptx: init: cannot load the encoder
+a2dp_codec: createCodec: codec aptX-HD
+a2dp_vendor_aptx_hd_encoder: A2DP_VendorLoadEncoderAptxHd: cannot open aptX-HD encoder library libaptXHD_encoder.so: libaptXHD_encoder.so: cannot open shared object file: No such file or directory
+a2dp_vendor_aptx_hd: init: cannot load the encoder
+a2dp_codec: createCodec: codec LDAC
+a2dp_vendor_ldac_encoder: load_func: cannot find function 'ldacBT_get_handle' in the encoder library: ./libldacBT_enc.so: undefined symbol: ldacBT_get_handle
+a2dp_vendor_ldac: init: cannot load the encoder
+a2dp_codec: createCodec: codec SBC SINK
+a2dp_codec: createCodec: codec AAC SINK
+a2dp_codec: createCodec: codec LDAC SINK
+a2dp_vendor_ldac_decoder: A2DP_VendorLoadDecoderLdac: cannot open LDAC decoder library libldacBT_dec.so: libldacBT_dec.so: cannot open shared object file: No such file or directory
+a2dp_vendor_ldac: init: cannot load the decoder
+a2dp_codec: init: initialized Source codec AAC
+a2dp_codec: init: initialized Source codec SBC
+a2dp_codec: init: initialized Sink codec AAC SINK
+a2dp_codec: init: initialized Sink codec SBC SINK
+a2dp_codec: init
+a2dp_codec: createCodec: codec SBC
+a2dp_codec: createCodec: codec AAC
+a2dp_codec: createCodec: codec aptX
+a2dp_vendor_aptx_encoder: A2DP_VendorLoadEncoderAptx: cannot open aptX encoder library libaptX_encoder.so: libaptX_encoder.so: cannot open shared object file: No such file or directory
+a2dp_vendor_aptx: init: cannot load the encoder
+a2dp_codec: createCodec: codec aptX-HD
+a2dp_vendor_aptx_hd_encoder: A2DP_VendorLoadEncoderAptxHd: cannot open aptX-HD encoder library libaptXHD_encoder.so: libaptXHD_encoder.so: cannot open shared object file: No such file or directory
+a2dp_vendor_aptx_hd: init: cannot load the encoder
+a2dp_codec: createCodec: codec LDAC
+a2dp_vendor_ldac_encoder: load_func: cannot find function 'ldacBT_get_handle' in the encoder library: ./libldacBT_enc.so: undefined symbol: ldacBT_get_handle
+a2dp_vendor_ldac: init: cannot load the encoder
+a2dp_codec: createCodec: codec SBC SINK
+a2dp_codec: createCodec: codec AAC SINK
+a2dp_codec: createCodec: codec LDAC SINK
+a2dp_vendor_ldac_decoder: A2DP_VendorLoadDecoderLdac: cannot open LDAC decoder library libldacBT_dec.so: libldacBT_dec.so: cannot open shared object file: No such file or directory
+a2dp_vendor_ldac: init: cannot load the decoder
+a2dp_codec: init: initialized Source codec AAC
+a2dp_codec: init: initialized Source codec SBC
+a2dp_codec: init: initialized Sink codec AAC SINK
+a2dp_codec: init: initialized Sink codec SBC SINK
+a2dp_codec: init
+a2dp_codec: createCodec: codec SBC
+a2dp_codec: createCodec: codec AAC
+a2dp_codec: createCodec: codec aptX
+a2dp_vendor_aptx_encoder: A2DP_VendorLoadEncoderAptx: cannot open aptX encoder library libaptX_encoder.so: libaptX_encoder.so: cannot open shared object file: No such file or directory
+a2dp_vendor_aptx: init: cannot load the encoder
+a2dp_codec: createCodec: codec aptX-HD
+a2dp_vendor_aptx_hd_encoder: A2DP_VendorLoadEncoderAptxHd: cannot open aptX-HD encoder library libaptXHD_encoder.so: libaptXHD_encoder.so: cannot open shared object file: No such file or directory
+a2dp_vendor_aptx_hd: init: cannot load the encoder
+a2dp_codec: createCodec: codec LDAC
+a2dp_vendor_ldac_encoder: load_func: cannot find function 'ldacBT_get_handle' in the encoder library: ./libldacBT_enc.so: undefined symbol: ldacBT_get_handle
+a2dp_vendor_ldac: init: cannot load the encoder
+a2dp_codec: createCodec: codec SBC SINK
+a2dp_codec: createCodec: codec AAC SINK
+a2dp_codec: createCodec: codec LDAC SINK
+a2dp_vendor_ldac_decoder: A2DP_VendorLoadDecoderLdac: cannot open LDAC decoder library libldacBT_dec.so: libldacBT_dec.so: cannot open shared object file: No such file or directory
+a2dp_vendor_ldac: init: cannot load the decoder
+a2dp_codec: init: initialized Source codec AAC
+a2dp_codec: init: initialized Source codec SBC
+a2dp_codec: init: initialized Sink codec AAC SINK
+a2dp_codec: init: initialized Sink codec SBC SINK
+a2dp_codec: init
+a2dp_codec: createCodec: codec SBC
+a2dp_codec: createCodec: codec AAC
+a2dp_codec: createCodec: codec aptX
+a2dp_vendor_aptx_encoder: A2DP_VendorLoadEncoderAptx: cannot open aptX encoder library libaptX_encoder.so: libaptX_encoder.so: cannot open shared object file: No such file or directory
+a2dp_vendor_aptx: init: cannot load the encoder
+a2dp_codec: createCodec: codec aptX-HD
+a2dp_vendor_aptx_hd_encoder: A2DP_VendorLoadEncoderAptxHd: cannot open aptX-HD encoder library libaptXHD_encoder.so: libaptXHD_encoder.so: cannot open shared object file: No such file or directory
+a2dp_vendor_aptx_hd: init: cannot load the encoder
+a2dp_codec: createCodec: codec LDAC
+a2dp_vendor_ldac_encoder: load_func: cannot find function 'ldacBT_get_handle' in the encoder library: ./libldacBT_enc.so: undefined symbol: ldacBT_get_handle
+a2dp_vendor_ldac: init: cannot load the encoder
+a2dp_codec: createCodec: codec SBC SINK
+a2dp_codec: createCodec: codec AAC SINK
+a2dp_codec: createCodec: codec LDAC SINK
+a2dp_vendor_ldac_decoder: A2DP_VendorLoadDecoderLdac: cannot open LDAC decoder library libldacBT_dec.so: libldacBT_dec.so: cannot open shared object file: No such file or directory
+a2dp_vendor_ldac: init: cannot load the decoder
+a2dp_codec: init: initialized Source codec AAC
+a2dp_codec: init: initialized Source codec SBC
+a2dp_codec: init: initialized Sink codec AAC SINK
+a2dp_codec: init: initialized Sink codec SBC SINK
+a2dp_codec: init
+a2dp_codec: createCodec: codec SBC
+a2dp_codec: createCodec: codec AAC
+a2dp_codec: createCodec: codec aptX
+a2dp_vendor_aptx_encoder: A2DP_VendorLoadEncoderAptx: cannot open aptX encoder library libaptX_encoder.so: libaptX_encoder.so: cannot open shared object file: No such file or directory
+a2dp_vendor_aptx: init: cannot load the encoder
+a2dp_codec: createCodec: codec aptX-HD
+a2dp_vendor_aptx_hd_encoder: A2DP_VendorLoadEncoderAptxHd: cannot open aptX-HD encoder library libaptXHD_encoder.so: libaptXHD_encoder.so: cannot open shared object file: No such file or directory
+a2dp_vendor_aptx_hd: init: cannot load the encoder
+a2dp_codec: createCodec: codec LDAC
+a2dp_vendor_ldac_encoder: load_func: cannot find function 'ldacBT_get_handle' in the encoder library: ./libldacBT_enc.so: undefined symbol: ldacBT_get_handle
+a2dp_vendor_ldac: init: cannot load the encoder
+a2dp_codec: createCodec: codec SBC SINK
+a2dp_codec: createCodec: codec AAC SINK
+a2dp_codec: createCodec: codec LDAC SINK
+a2dp_vendor_ldac_decoder: A2DP_VendorLoadDecoderLdac: cannot open LDAC decoder library libldacBT_dec.so: libldacBT_dec.so: cannot open shared object file: No such file or directory
+a2dp_vendor_ldac: init: cannot load the decoder
+a2dp_codec: init: initialized Source codec AAC
+a2dp_codec: init: initialized Source codec SBC
+a2dp_codec: init: initialized Sink codec AAC SINK
+a2dp_codec: init: initialized Sink codec SBC SINK
+a2dp_codec: init
+a2dp_codec: createCodec: codec SBC
+a2dp_codec: createCodec: codec AAC
+a2dp_codec: createCodec: codec aptX
+a2dp_vendor_aptx_encoder: A2DP_VendorLoadEncoderAptx: cannot open aptX encoder library libaptX_encoder.so: libaptX_encoder.so: cannot open shared object file: No such file or directory
+a2dp_vendor_aptx: init: cannot load the encoder
+a2dp_codec: createCodec: codec aptX-HD
+a2dp_vendor_aptx_hd_encoder: A2DP_VendorLoadEncoderAptxHd: cannot open aptX-HD encoder library libaptXHD_encoder.so: libaptXHD_encoder.so: cannot open shared object file: No such file or directory
+a2dp_vendor_aptx_hd: init: cannot load the encoder
+a2dp_codec: createCodec: codec LDAC
+a2dp_vendor_ldac_encoder: load_func: cannot find function 'ldacBT_get_handle' in the encoder library: ./libldacBT_enc.so: undefined symbol: ldacBT_get_handle
+a2dp_vendor_ldac: init: cannot load the encoder
+a2dp_codec: createCodec: codec SBC SINK
+a2dp_codec: createCodec: codec AAC SINK
+a2dp_codec: createCodec: codec LDAC SINK
+a2dp_vendor_ldac_decoder: A2DP_VendorLoadDecoderLdac: cannot open LDAC decoder library libldacBT_dec.so: libldacBT_dec.so: cannot open shared object file: No such file or directory
+a2dp_vendor_ldac: init: cannot load the decoder
+a2dp_codec: init: initialized Source codec AAC
+a2dp_codec: init: initialized Source codec SBC
+a2dp_codec: init: initialized Sink codec AAC SINK
+a2dp_codec: init: initialized Sink codec SBC SINK
+bt_btif_a2dp_sink: btif_a2dp_sink_init
+[1212/170957.186689:INFO:message_loop_thread.cc(175)] Run: message loop starting for thread bt_a2dp_sink_worker_thread
+bt_btif_a2dp_sink: btif_a2dp_sink_init_delayed
+bt_btif: get_profile_interface: id = avrcp
+bt_btif: get_profile_interface: id = avrcp_ctrl
+[1212/170957.186970:INFO:daemon.cc(143)] after start up bt
+[1212/170957.187065:INFO:ipc_handler_linux.cc(71)] Creating a Unix domain socket:fluoride
+[1212/170957.187210:INFO:daemon.cc(153)] Daemon initialized
+[1212/170957.187395:INFO:ipc_handler_linux.cc(140)] Listening to incoming connections
+bt_btif: enable: start restricted = 0
+bt_stack_manager: event_start_up_stack is bringing up the stack
+bt_core_module: module_start_up Starting module "btif_config_module"
+bt_core_module: module_start_up Started module "btif_config_module"
+bt_core_module: module_start_up Starting module "btsnoop_module"
+bt_snoop: Deleting snoop log if it exists
+bt_core_module: module_start_up Started module "btsnoop_module"
+bt_core_module: module_start_up Starting module "hci_module"
+bt_hci: hci_module_start_up
+[1212/170957.187727:INFO:message_loop_thread.cc(175)] Run: message loop starting for thread bt_hci_thread
+bt_hci: hci_module_start_up starting async portion
+[1212/170957.187956:INFO:hci_layer_linux.cc(170)] hci_initialize
+[1212/170957.187974:INFO:hci_layer_linux.cc(182)] Using interface hci0
+[1212/170957.187998:INFO:hci_layer_linux.cc(369)] rfkill
+[1212/170957.188050:INFO:hci_layer_linux.cc(287)] wait_hcidev
+[1212/170957.188166:INFO:hci_layer_linux.cc(220)] HCI device ready
+bt_hci: event_finish_startup
+bt_core_module: module_start_up Started module "hci_module"
+[1212/170957.192294:INFO:message_loop_thread.cc(175)] Run: message loop starting for thread bt_startup_thread
+[1212/170957.193300:INFO:btu_task.cc(96)] Bluetooth chip preload is complete
+[1212/170957.193408:INFO:gatt_api.cc(946)] GATT_Register 81818181-8181-8181-8181-818181818181
+[1212/170957.193429:INFO:gatt_api.cc(966)] allocated gatt_if=1
+[1212/170957.193440:INFO:gatt_api.cc(161)] GATTS_AddService
+[1212/170957.193455:INFO:gatt_api.cc(264)] GATTS_AddService: service parsed correctly, now starting
+[1212/170957.193490:INFO:gatt_api.cc(946)] GATT_Register 82828282-8282-8282-8282-828282828282
+[1212/170957.193515:INFO:gatt_api.cc(966)] allocated gatt_if=2
+[1212/170957.193524:INFO:gatt_api.cc(161)] GATTS_AddService
+[1212/170957.193532:INFO:gatt_api.cc(264)] GATTS_AddService: service parsed correctly, now starting
+bt_bte: BTE_InitTraceLevels -- TRC_HCI : Level 2
+bt_bte: BTE_InitTraceLevels -- TRC_L2CAP : Level 2
+bt_bte: BTE_InitTraceLevels -- TRC_RFCOMM : Level 2
+bt_bte: BTE_InitTraceLevels -- TRC_AVDT : Level 2
+bt_bte: BTE_InitTraceLevels -- TRC_AVRC : Level 2
+bt_bte: BTE_InitTraceLevels -- TRC_A2D : Level 2
+bt_bte: BTE_InitTraceLevels -- TRC_BNEP : Level 2
+bt_bte: BTE_InitTraceLevels -- TRC_BTM : Level 2
+bt_bte: BTE_InitTraceLevels -- TRC_HID_HOST : Level 2
+bt_bte: BTE_InitTraceLevels -- TRC_PAN : Level 2
+bt_bte: BTE_InitTraceLevels -- TRC_SDP : Level 2
+bt_bte: BTE_InitTraceLevels -- TRC_SMP : Level 2
+bt_bte: BTE_InitTraceLevels -- TRC_HID_DEV : Level 2
+bt_bte: BTE_InitTraceLevels -- TRC_BTAPP : Level 2
+bt_bte: BTE_InitTraceLevels -- TRC_BTIF : Level 2
+[INFO:message_loop_thread.cc(175)] Run: message loop starting for thread bt_main_thread
+[INFO:message_loop_thread.cc(175)] Run: message loop starting for thread bt_module_lifecycle_thread
+bt_core_module: module_start_up Starting module "controller_module"
+bt_core_module: module_start_up Started module "controller_module"
+[INFO:message_loop_thread.cc(196)] Run: message loop finished for thread bt_module_lifecycle_thread
+bt_btm: btm_decode_ext_features_page: feature page 1 ignored
+bt_btm: btm_decode_ext_features_page: feature page 2 ignored
+[INFO:message_loop_thread.cc(87)] ShutDown: thread bt_module_lifecycle_thread(-1) is already stopped
+bt_btm_sec: BTM_SecRegister p_cb_info->p_le_callback == 0x0x7ff4a8a76c60
+bt_btm_sec: BTM_SecRegister btm_cb.api.p_le_callback = 0x0x7ff4a8a76c60 
+[INFO:ble_advertiser_hci_interface.cc(745)] Legacy advertising will be in use
+[INFO:gatt_api.cc(946)] GATT_Register d67a706f-d26e-217a-0f20-f4602d56bee1
+[INFO:gatt_api.cc(966)] allocated gatt_if=3
+bt_btif_storage: btif_storage_get_adapter_property: Controller ready!
+bt_btif_storage: btif_storage_get_adapter_property service_mask:0x40000
+bt_bta_av: bta_av_api_register: AVRCP version used for sdp: "avrcp14"
+a2dp_codec: A2DP_InitCodecConfig: codec SBC SINK
+a2dp_codec: A2DP_InitCodecConfig: codec AAC SINK
+bt_btif: bta_av_rc_create: Skipping RC creation for the old AVRCP profile
+[1212/170957.292164:VERBOSE1:bluetooth_interface.cc(81)] Adapter properties changed - status: BT_STATUS_SUCCESS, num_properties: 6
+bt_bta_av: bta_av_api_register: AVRCP version used for sdp: "avrcp14"
+a2dp_codec: A2DP_InitCodecConfig: codec SBC SINK
+a2dp_codec: A2DP_InitCodecConfig: codec AAC SINK
+bt_bta_av: bta_av_api_register: AVRCP version used for sdp: "avrcp14"
+a2dp_codec: A2DP_InitCodecConfig: codec SBC SINK
+a2dp_codec: A2DP_InitCodecConfig: codec AAC SINK
+[1212/170957.292275:INFO:adapter.cc(526)] Adapter properties changed
+bt_bta_av: bta_av_api_register: AVRCP version used for sdp: "avrcp14"
+a2dp_codec: A2DP_InitCodecConfig: codec SBC SINK
+[1212/170957.292290:INFO:adapter.cc(549)] Adapter address changed: 34:41:5D:5C:6C:95
+a2dp_codec: A2DP_InitCodecConfig: codec AAC SINK
+bt_bta_av: bta_av_api_register: AVRCP version used for sdp: "avrcp14"
+a2dp_codec: A2DP_InitCodecConfig: codec SBC SINK
+[1212/170957.292317:INFO:adapter.cc(556)] Adapter name changed: 
+a2dp_codec: A2DP_InitCodecConfig: codec AAC SINK
+bt_bta_av: bta_av_api_register: AVRCP version used for sdp: "avrcp14"
+a2dp_codec: A2DP_InitCodecConfig: codec SBC SINK
+a2dp_codec: A2DP_InitCodecConfig: codec AAC SINK
+[1212/170957.292361:VERBOSE1:adapter.cc(597)] Unhandled adapter property: BT_PROPERTY_ADAPTER_SCAN_MODE
+[1212/170957.292372:VERBOSE1:adapter.cc(597)] Unhandled adapter property: BT_PROPERTY_ADAPTER_DISCOVERY_TIMEOUT
+[1212/170957.292381:VERBOSE1:adapter.cc(597)] Unhandled adapter property: BT_PROPERTY_UUIDS
+bt_btif_core: btif_enable_bluetooth_evt entered: status 0
+bt_osi_thread: run_thread: thread id 9018, thread name btif_sock started
+bt_bte_conf: Device ID record 1 : primary
+bt_bte_conf:   vendorId            = 00e0
+bt_bte_conf:   vendorIdSource      = 0001
+bt_bte_conf:   product             = 1200
+bt_bte_conf:   version             = 1436
+bt_bte_conf:   clientExecutableURL = 
+bt_bte_conf:   serviceDescription  = 
+bt_bte_conf:   documentationURL    = 
+bt_bte_conf: bte_load_did_conf no section named DID2.
+bt_btif_core: btif_enable_bluetooth_evt finished
+bt_stack_manager: event_start_up_stack finished
+[1212/170957.292710:VERBOSE1:bluetooth_interface.cc(73)] Adapter state changed: BT_STATE_ON
+[1212/170957.292737:INFO:adapter.cc(504)] Adapter state changed: BT_STATE_ON
