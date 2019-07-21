@@ -56,7 +56,7 @@ namespace bluetooth {
 
 namespace {
 const std::string DesiredDeviceName = "nimble_R_asha"; //Synopsys_BLE_Dev  OPPO A57 nimble-bleprph nimble_server
-const std::string DesiredDeviceAddress = "00:00:10:10:00:00";
+const std::string DesiredDeviceAddress = "00:00:99:99:00:00";
 
 // The global Daemon instance.
 Daemon* g_daemon = nullptr;
