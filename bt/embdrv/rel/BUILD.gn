@@ -1,0 +1,99 @@
+#
+#  Copyright 2015 Google, Inc.
+#
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at:
+#
+#  http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+#
+
+static_library("rel") {
+  sources = [
+    "src/basic_op/ref/src/basop32.c",
+    "src/basic_op/ref/src/enh40.c",
+    "src/basic_op/src/basop32_new.c",
+    "src/basic_op/src/control.c",
+    "src/basic_op/src/count.c",
+    "src/basic_op/src/dynmem.c",
+    "src/basic_op/src/enh1632.c",
+    "src/basic_op/src/enhUL32.c",
+    "src/adjust_global_gain_fx.c" , 
+    "src/apply_global_gain_fx.c",
+    "src/ari_codec.c",
+    "src/attack_detector_fx.c",
+    "src/basop_mpy.c",
+    "src/basop_util.c",
+    "src/constants.c",
+    "src/dct2_fx.c",
+    "src/dct4_fx.c",
+    "src/dec_entropy.c",
+    "src/dec_lc3.c",
+    "src/detect_cutoff_warped_fx.c",
+    "src/enc_entropy.c",
+    "src/enc_lc3.c",
+    "src/estimate_global_gain_fx.c",
+    "src/fft.c",
+    "src/imdct_fx.c",
+    "src/lc3.c",
+    "src/levinson_fx.c",
+    "src/ltpf_coder_fx.c",
+    "src/ltpf_decoder_fx.c",
+    "src/mdct_fx.c",
+    "src/mdct_shaping_fx.c",
+    "src/noise_factor_fx.c",
+    "src/noise_filling_fx.c",
+    "src/olpa_fx.c",
+    "src/per_band_energy_fx.c",
+    "src/plc_apply_fx.c",
+    "src/plc_classify_fx.c",
+    "src/plc_lpc_scaling_fx.c",
+    "src/plc_main_fx.c",
+    "src/plc_noise_substitution_fx.c",
+    "src/plc_phecu_f0_refine_first_fx.c",
+    "src/plc_phecu_fec_hq_fx.c",
+    "src/plc_phecu_lf_peak_analysis_fx.c",
+    "src/plc_phecu_setf0hz_fx.c",
+    "src/plc_phecu_tools_fx.c",
+    "src/plc_taper_mdct_tail_fx.c",
+    "src/plc_tdac_fx.c",
+    "src/plc_tdc_inverse_odft_fx.c",
+    "src/plc_tdc_lagwin_fx.c",
+    "src/plc_tdc_main_fx.c",
+    "src/plc_tdc_pre_emphasis_fx.c",
+    "src/plc_update_aft_imdct_fx.c",
+    "src/plc_update_fx.c",
+    "src/plc_xcorr_fx.c",
+    "src/pvq_dec_fx.c",
+    "src/pvq_enc_fx.c",
+    "src/pvq_index_fx.c",
+    "src/quantize_spec_fx.c",
+    "src/resamp12k8_fx.c",
+    "src/residual_coding_fx.c",
+    "src/residual_decoding_fx.c",
+    "src/rom_basop_util.c",
+    "src/scale_signal24_fx.c",
+    "src/setup_dec_lc3.c",
+    "src/setup_enc_lc3.c",
+    "src/sns_compute_scf_fx.c",
+    "src/sns_interpolate_scf_fx.c",
+    "src/sns_quantize_scf_fx.c",
+    "src/tns_coder_fx.c",
+    "src/tns_decoder_fx.c",
+  ]
+
+    include_dirs = [
+    "src/basic_op/ref/include",
+    "include",
+    "src/basic_op/include",
+  ]
+    defines = [ "REFERENCE" ]
+
+}
+
